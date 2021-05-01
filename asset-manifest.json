@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/my-website-2/static/css/main.9d5b29c0.chunk.css",
-    "main.js": "/my-website-2/static/js/main.684ac1bc.chunk.js",
-    "main.js.map": "/my-website-2/static/js/main.684ac1bc.chunk.js.map",
-    "runtime-main.js": "/my-website-2/static/js/runtime-main.0e9a2b0c.js",
-    "runtime-main.js.map": "/my-website-2/static/js/runtime-main.0e9a2b0c.js.map",
-    "static/js/2.c6f5cb2a.chunk.js": "/my-website-2/static/js/2.c6f5cb2a.chunk.js",
-    "static/js/2.c6f5cb2a.chunk.js.map": "/my-website-2/static/js/2.c6f5cb2a.chunk.js.map",
-    "static/js/3.be38ec65.chunk.js": "/my-website-2/static/js/3.be38ec65.chunk.js",
-    "static/js/3.be38ec65.chunk.js.map": "/my-website-2/static/js/3.be38ec65.chunk.js.map",
-    "index.html": "/my-website-2/index.html",
-    "static/css/main.9d5b29c0.chunk.css.map": "/my-website-2/static/css/main.9d5b29c0.chunk.css.map",
-    "static/js/2.c6f5cb2a.chunk.js.LICENSE.txt": "/my-website-2/static/js/2.c6f5cb2a.chunk.js.LICENSE.txt",
-    "static/media/kevin-pic.a3bc81aa.jpeg": "/my-website-2/static/media/kevin-pic.a3bc81aa.jpeg"
+    "main.css": "/Krizeon.github.io/static/css/main.9d5b29c0.chunk.css",
+    "main.js": "/Krizeon.github.io/static/js/main.660eb871.chunk.js",
+    "main.js.map": "/Krizeon.github.io/static/js/main.660eb871.chunk.js.map",
+    "runtime-main.js": "/Krizeon.github.io/static/js/runtime-main.b5ebb933.js",
+    "runtime-main.js.map": "/Krizeon.github.io/static/js/runtime-main.b5ebb933.js.map",
+    "static/js/2.ee5e2771.chunk.js": "/Krizeon.github.io/static/js/2.ee5e2771.chunk.js",
+    "static/js/2.ee5e2771.chunk.js.map": "/Krizeon.github.io/static/js/2.ee5e2771.chunk.js.map",
+    "static/js/3.deabbe9d.chunk.js": "/Krizeon.github.io/static/js/3.deabbe9d.chunk.js",
+    "static/js/3.deabbe9d.chunk.js.map": "/Krizeon.github.io/static/js/3.deabbe9d.chunk.js.map",
+    "index.html": "/Krizeon.github.io/index.html",
+    "static/css/main.9d5b29c0.chunk.css.map": "/Krizeon.github.io/static/css/main.9d5b29c0.chunk.css.map",
+    "static/js/2.ee5e2771.chunk.js.LICENSE.txt": "/Krizeon.github.io/static/js/2.ee5e2771.chunk.js.LICENSE.txt",
+    "static/media/kevin-pic.a3bc81aa.jpeg": "/Krizeon.github.io/static/media/kevin-pic.a3bc81aa.jpeg"
   },
   "entrypoints": [
-    "static/js/runtime-main.0e9a2b0c.js",
-    "static/js/2.c6f5cb2a.chunk.js",
+    "static/js/runtime-main.b5ebb933.js",
+    "static/js/2.ee5e2771.chunk.js",
     "static/css/main.9d5b29c0.chunk.css",
-    "static/js/main.684ac1bc.chunk.js"
+    "static/js/main.660eb871.chunk.js"
   ]
 }
