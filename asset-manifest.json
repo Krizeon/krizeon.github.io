@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/Krizeon.github.io/static/css/main.9d5b29c0.chunk.css",
-    "main.js": "/Krizeon.github.io/static/js/main.660eb871.chunk.js",
-    "main.js.map": "/Krizeon.github.io/static/js/main.660eb871.chunk.js.map",
-    "runtime-main.js": "/Krizeon.github.io/static/js/runtime-main.b5ebb933.js",
-    "runtime-main.js.map": "/Krizeon.github.io/static/js/runtime-main.b5ebb933.js.map",
-    "static/js/2.ee5e2771.chunk.js": "/Krizeon.github.io/static/js/2.ee5e2771.chunk.js",
-    "static/js/2.ee5e2771.chunk.js.map": "/Krizeon.github.io/static/js/2.ee5e2771.chunk.js.map",
-    "static/js/3.deabbe9d.chunk.js": "/Krizeon.github.io/static/js/3.deabbe9d.chunk.js",
-    "static/js/3.deabbe9d.chunk.js.map": "/Krizeon.github.io/static/js/3.deabbe9d.chunk.js.map",
-    "index.html": "/Krizeon.github.io/index.html",
-    "static/css/main.9d5b29c0.chunk.css.map": "/Krizeon.github.io/static/css/main.9d5b29c0.chunk.css.map",
-    "static/js/2.ee5e2771.chunk.js.LICENSE.txt": "/Krizeon.github.io/static/js/2.ee5e2771.chunk.js.LICENSE.txt",
-    "static/media/kevin-pic.a3bc81aa.jpeg": "/Krizeon.github.io/static/media/kevin-pic.a3bc81aa.jpeg"
+    "main.css": "/static/css/main.9d5b29c0.chunk.css",
+    "main.js": "/static/js/main.660eb871.chunk.js",
+    "main.js.map": "/static/js/main.660eb871.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.95b7882d.js",
+    "runtime-main.js.map": "/static/js/runtime-main.95b7882d.js.map",
+    "static/js/2.ee5e2771.chunk.js": "/static/js/2.ee5e2771.chunk.js",
+    "static/js/2.ee5e2771.chunk.js.map": "/static/js/2.ee5e2771.chunk.js.map",
+    "static/js/3.deabbe9d.chunk.js": "/static/js/3.deabbe9d.chunk.js",
+    "static/js/3.deabbe9d.chunk.js.map": "/static/js/3.deabbe9d.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.9d5b29c0.chunk.css.map": "/static/css/main.9d5b29c0.chunk.css.map",
+    "static/js/2.ee5e2771.chunk.js.LICENSE.txt": "/static/js/2.ee5e2771.chunk.js.LICENSE.txt",
+    "static/media/kevin-pic.a3bc81aa.jpeg": "/static/media/kevin-pic.a3bc81aa.jpeg"
   },
   "entrypoints": [
-    "static/js/runtime-main.b5ebb933.js",
+    "static/js/runtime-main.95b7882d.js",
     "static/js/2.ee5e2771.chunk.js",
     "static/css/main.9d5b29c0.chunk.css",
     "static/js/main.660eb871.chunk.js"
