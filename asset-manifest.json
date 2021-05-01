@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/my-website-2/static/css/main.9d5b29c0.chunk.css",
+    "main.js": "/my-website-2/static/js/main.684ac1bc.chunk.js",
+    "main.js.map": "/my-website-2/static/js/main.684ac1bc.chunk.js.map",
+    "runtime-main.js": "/my-website-2/static/js/runtime-main.0e9a2b0c.js",
+    "runtime-main.js.map": "/my-website-2/static/js/runtime-main.0e9a2b0c.js.map",
+    "static/js/2.c6f5cb2a.chunk.js": "/my-website-2/static/js/2.c6f5cb2a.chunk.js",
+    "static/js/2.c6f5cb2a.chunk.js.map": "/my-website-2/static/js/2.c6f5cb2a.chunk.js.map",
+    "static/js/3.be38ec65.chunk.js": "/my-website-2/static/js/3.be38ec65.chunk.js",
+    "static/js/3.be38ec65.chunk.js.map": "/my-website-2/static/js/3.be38ec65.chunk.js.map",
+    "index.html": "/my-website-2/index.html",
+    "static/css/main.9d5b29c0.chunk.css.map": "/my-website-2/static/css/main.9d5b29c0.chunk.css.map",
+    "static/js/2.c6f5cb2a.chunk.js.LICENSE.txt": "/my-website-2/static/js/2.c6f5cb2a.chunk.js.LICENSE.txt",
+    "static/media/kevin-pic.a3bc81aa.jpeg": "/my-website-2/static/media/kevin-pic.a3bc81aa.jpeg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.0e9a2b0c.js",
+    "static/js/2.c6f5cb2a.chunk.js",
+    "static/css/main.9d5b29c0.chunk.css",
+    "static/js/main.684ac1bc.chunk.js"
+  ]
+}
