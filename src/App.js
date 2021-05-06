@@ -1,21 +1,33 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
+import HomepageImage from './components/HomepageImage';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        <HomepageImage />
+        <h1>
+          Kevin Hernandez
+        </h1>
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          This is a placeholder. Just to test!
         </p>
         <a
           className="App-link"
-          href="https://reactjs.org"
+          href="https://github.com/Krizeon"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          Github page
+        </a>
+        <a
+          className="App-link"
+          href="https://www.linkedin.com/in/kevin-hernandez-3816331a7/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          LinkedIn
         </a>
       </header>
     </div>
