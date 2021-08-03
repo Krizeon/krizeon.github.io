@@ -19,7 +19,6 @@ const useStyles = makeStyles((theme) => ({
 
 const Menu = ({name, setPage}) => {
   const classes = useStyles();
-
   return (
     <div className={classes.root}>
       <Paper className={classes.paper}>

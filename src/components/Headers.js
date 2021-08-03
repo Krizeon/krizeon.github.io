@@ -26,7 +26,7 @@ const Headers = ({name, setPage}) => {
 
   return (
     <div className={classes.root}>
-      <AppBar position="static">
+      <AppBar position="sticky">
         <Toolbar>
             <IconButton
               edge="start"
@@ -36,7 +36,7 @@ const Headers = ({name, setPage}) => {
               onClick={()=>{setMenu(!menu)}}
             >
             {menu? <Menu setPage={setPage} name={name}/> : <></>}
-              <MenuIcon />
+              <MenuIcon/>
             </IconButton>
             <Typography variant="h6" className={classes.title}>
               Kevin Hernandez

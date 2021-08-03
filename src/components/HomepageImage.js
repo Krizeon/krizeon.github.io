@@ -2,7 +2,7 @@ import profilepic from '../assets/images/kevin-pic.jpeg';
 
 const HomepageImage = () => {
   return (
-    <img src={profilepic} style={{width: 700}} alt="Profile Picture"/>
+    <img class="aligncenter" src={profilepic} style={{width: 500}} alt="Profile Picture"/>
   );
 }
 
