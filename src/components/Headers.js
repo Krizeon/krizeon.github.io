@@ -26,18 +26,19 @@ const Headers = ({name, setPage}) => {
 
   return (
     <div className={classes.root}>
-      <AppBar position="sticky">
+      <AppBar position="fixed">
         <Toolbar>
             <IconButton
-              edge="start"
               className={classes.menuButton}
               color="inherit"
-              aria-label="menu"
+              aria-controls="simple-menu"
+              aria-haspopup="true"
               onClick={()=>{setMenu(!menu)}}
             >
-            {menu? <Menu setPage={setPage} name={name}/> : <></>}
+            Menu 
               <MenuIcon/>
             </IconButton>
+            {menu? <Menu id="simple-menu" keepMounted menu={menu} setPage={setPage} name={name}/> : <></>}
             <Typography variant="h6" className={classes.title}>
               Kevin Hernandez
             </Typography>

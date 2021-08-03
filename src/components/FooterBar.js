@@ -6,8 +6,8 @@ import Link from '@material-ui/core/Link';
 
 const FooterBar = () => {
   return (
-    <div>
-      <Breadcrumbs aria-label="breadcrumb">
+    <div class="center">
+      <Breadcrumbs class="center" aria-label="breadcrumb">
         <Link
           color="inherit"
           href="https://github.com/Krizeon"

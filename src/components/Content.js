@@ -1,31 +1,54 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import Paper from '@material-ui/core/Paper';
-import Container from '@material-ui/core/Container';
+import Card from '@material-ui/core/Card';
+import CardActions from '@material-ui/core/CardActions';
+import CardContent from '@material-ui/core/CardContent';
+import Button from '@material-ui/core/Button';
+import Typography from '@material-ui/core/Typography';
 
-const useStyles = makeStyles((theme) => ({
+const useStyles = makeStyles({
   root: {
-    display: 'flex',
-    flexWrap: 'wrap',
-    '& > *': {
-      margin: theme.spacing(1),
-      width: theme.spacing(16),
-      height: theme.spacing(16),
-    },
+    minWidth: 275,
   },
-}));
+  bullet: {
+    display: 'inline-block',
+    margin: '0 2px',
+    transform: 'scale(0.8)',
+  },
+  title: {
+    fontSize: 14,
+  },
+  pos: {
+    marginBottom: 12,
+  },
+});
 
 const Content = () => {
   const classes = useStyles();
+  const bull = <span className={classes.bullet}>•</span>;
 
   return (
-    <div className={classes.root}>
-      <Container>
-      <Paper elevation={0} />
-      <Paper />
-      <Paper elevation={3} />
-      </Container>
-    </div>
+    <Card className={classes.root}>
+      <CardContent>
+        <Typography className={classes.title} color="textSecondary" gutterBottom>
+          This is a placeholder!
+        </Typography>
+        <Typography variant="h5" component="h2">
+          Place{bull}hol{bull}der
+        </Typography>
+        <Typography className={classes.pos} color="textSecondary">
+          this is another placholder
+        </Typography>
+        <Typography variant="body2" component="p">
+          lorem ipsum.
+          <br />
+          {'"another placeholder"'}
+        </Typography>
+      </CardContent>
+      <CardActions>
+        <Button size="small">Don't Learn More!</Button>
+      </CardActions>
+    </Card>
   );
 }
 

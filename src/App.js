@@ -1,5 +1,6 @@
 // import logo from './logo.svg';
 import {useState} from 'react';
+import  './App.css';
 import Headers from './components/Headers';
 import About from './components/About';
 import Home from './components/Home';
@@ -10,7 +11,7 @@ import FooterBar from './components/FooterBar';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import Typography from '@material-ui/core/Typography';
 import Container from '@material-ui/core/Container';
-
+import Toolbar from '@material-ui/core/Toolbar';
 
 function App() {
   const [page, setPage] = useState("home");
@@ -26,6 +27,8 @@ function App() {
       <Container maxWidth="lg">
 
       <Headers name="Kevin" setPage={handleSetPage}/>
+      <Toolbar/>
+      <h2>{page}</h2>
       {page === "home" && (<Home/>)}
       {page === "about"  && (<About/>)}
       {page === "contact" && (<Contact/>)}
@@ -34,7 +37,6 @@ function App() {
       </Container>
       <p>{count}</p>
       <button onClick={()=>{setCount(count + 1)}}>Add to count</button>
-      <h1>{page}</h1>
     </div>
   );
 }

@@ -17,18 +17,15 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
+
 const Menu = ({name, setPage}) => {
   const classes = useStyles();
   return (
     <div className={classes.root}>
-      <Paper className={classes.paper}>
-        <MenuList>
-          <MenuItem onClick={()=> {setPage("home")}}>Home</MenuItem>
-          <MenuItem onClick={()=> {setPage("about")}}>About</MenuItem>
-          <MenuItem onClick={()=> {setPage("projects")}}>Projects</MenuItem>
-          <MenuItem onClick={()=> {setPage("contact")}}>Contact</MenuItem>
-        </MenuList>
-      </Paper>
+        <MenuItem onClick={()=> {setPage("home")}}>Home</MenuItem>
+        <MenuItem onClick={()=> {setPage("about")}}>About</MenuItem>
+        <MenuItem onClick={()=> {setPage("projects")}}>Projects</MenuItem>
+        <MenuItem onClick={()=> {setPage("contact")}}>Contact</MenuItem>
     </div>
   );
 }
