@@ -28,7 +28,6 @@ const Home = ({posts}) => {
         {posts.map((post) => (
               <BlogPost key={post.title} post={post} />
             ))}
-        <p>This is my Home Page!</p>
         <Content></Content>
       </Container>
     </div>

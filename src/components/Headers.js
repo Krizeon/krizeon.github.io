@@ -20,7 +20,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const Headers = ({name, setPage}) => {
+const Headers = ({name, page, setPage}) => {
   const classes = useStyles();
   const [menu, setMenu] = useState(false);
 
@@ -38,7 +38,15 @@ const Headers = ({name, setPage}) => {
             Menu
               <MenuIcon/>
             </IconButton>
-            {menu? <Menu id="simple-menu" keepMounted menu={menu} setPage={setPage} name={name}/> : <></>}
+            {menu?
+              <Menu
+              id="simple-menu"
+              href={page}
+              keepMounted menu={menu}
+              setPage={setPage}
+              name={name}/>
+            : <></>
+            }
             <Typography variant="h6" className={classes.title}>
               Kevin Hernandez
             </Typography>

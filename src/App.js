@@ -20,18 +20,18 @@ import Toolbar from '@material-ui/core/Toolbar';
 
 const posts = [
   {
-    title: 'My Game',
+    title: 'Color Seeker',
     date: '2021',
     description:
-      'This is a wider card with supporting text below as a natural lead-in to additional content.',
+      'Tile-based platformer coded using Pythons Arcade library!',
     image: gameScreenshot,
     imageText: 'Cool Text',
   },
   {
-    title: 'WiFi-controlled Robot',
+    title: 'WiFi Controlled Robot',
     date: 'Fall 2019',
     description:
-      'Here is a block of test that I put here on purpose!.',
+      'For our final project in our Embedded Systems course, we were given the task of building a hands-on, creative learning experience',
     image: robotPic,
     imageText: 'Image Text',
   },
@@ -50,7 +50,7 @@ function App() {
     <div className="App">
       <Container maxWidth="lg">
 
-      <Headers name="Kevin" setPage={handleSetPage}/>
+      <Headers name="Kevin" page={page} setPage={handleSetPage}/>
       <Toolbar/>
       <h2>{page}</h2>
       {page === "home" && (<Home posts={posts}/>)}

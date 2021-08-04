@@ -27,7 +27,7 @@ const { post } = props;
 
 return (
   <Grid container spacing={4}>
-  <Grid item xs={12} md={6}>
+  <Grid item xs={12} md={24}>
     <CardActionArea component="a" href="projects">
       <Card className={classes.card}>
         <div className={classes.cardDetails}>
