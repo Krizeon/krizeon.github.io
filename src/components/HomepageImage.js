@@ -15,7 +15,7 @@ const useStyles = makeStyles({
 const HomepageImage = () => {
   const classes = useStyles();
   return (
-    <div>
+    <div class="center">
       <Card className={classes.root}>
         <CardMedia
         className={classes.media}

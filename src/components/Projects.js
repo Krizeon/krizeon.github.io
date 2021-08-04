@@ -1,4 +1,5 @@
 import React from 'react';
+import ContentSeparator from './ContentSeparator'
 
 const Projects = () => {
   return(
@@ -13,6 +14,7 @@ const Projects = () => {
       <a href="https://github.com/Krizeon/CS435-Robot">
         Embedded Systems Robot Project - MicroPython, ESP32 hardware
       </a>
+      <ContentSeparator/>
     </>
   );
 }
