@@ -13,23 +13,48 @@ const useStyles = makeStyles((theme) => ({
     display: 'flex',
   },
   paper: {
-    marginRight: theme.spacing(2),
+    flexGrow: 1,
+    disableGutters: 'true'
   },
 }));
 
-const Menu = ({name, setPage}) => {
-  const classes = useStyles();
 
+const Menu = ({name, page, setPage}) => {
+  const classes = useStyles();
   return (
     <div className={classes.root}>
-      <Paper className={classes.paper}>
-        <MenuList>
-          <MenuItem onClick={()=> {setPage("home")}}>Home</MenuItem>
-          <MenuItem onClick={()=> {setPage("about")}}>About</MenuItem>
-          <MenuItem onClick={()=> {setPage("projects")}}>Projects</MenuItem>
-          <MenuItem onClick={()=> {setPage("contact")}}>Contact</MenuItem>
-        </MenuList>
-      </Paper>
+
+        {page==="Home" ?
+          <u>
+            <MenuItem className={classes.paper} onClick={()=> {setPage("Home")}}>Home</MenuItem>
+          </u>
+          :
+          <MenuItem className={classes.paper} onClick={()=> {setPage("Home")}}>Home</MenuItem>
+        }
+
+        {page==="About" ?
+          <u>
+            <MenuItem className={classes.paper} onClick={()=> {setPage("About")}}>About</MenuItem>
+          </u>
+          :
+          <MenuItem className={classes.paper} onClick={()=> {setPage("About")}}>About</MenuItem>
+          }
+
+        {page==="Projects" ?
+          <u>
+            <MenuItem className={classes.paper} onClick={()=> {setPage("Projects")}}>Projects</MenuItem>
+          </u>
+          :
+          <MenuItem className={classes.paper} onClick={()=> {setPage("Projects")}}>Projects</MenuItem>
+          }
+
+        {page==="Contact" ?
+          <u>
+            <MenuItem className={classes.paper} onClick={()=> {setPage("Contact")}}>Contact</MenuItem>
+          </u>
+          :
+          <MenuItem className={classes.paper} onClick={()=> {setPage("Contact")}}>Contact</MenuItem>
+          }
     </div>
   );
 }
