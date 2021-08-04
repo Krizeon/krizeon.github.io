@@ -8,7 +8,7 @@ import Container from '@material-ui/core/Container';
 
 const useStyles = makeStyles((theme) => ({
   footer: {
-    backgroundColor: theme.palette.background.paper,
+    background: 'linear-gradient(45deg, #cdcdcd 30%, #efefef 90%)',
     // marginTop: theme.spacing(8),
     padding: theme.spacing(6, 0),
   },

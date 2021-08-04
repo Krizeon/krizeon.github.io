@@ -19,12 +19,12 @@ const useStyles = makeStyles((theme) => ({
     flexGrow: 1,
   },
   bar: {
-    background: 'linear-gradient(45deg, #5f9ea0 30%, #317873 90%)',
+    background: 'linear-gradient(45deg, #cdcdcd 30%, #efefef 90%)',
     border: 0,
-    borderRadius: 3,
-    boxShadow: '0 3px 5px 2px rgba(49, 120, 115, .3)',
+    borderRadius: 0,
+    boxShadow: '0 3px 5px 2px rgba(163, 193, 173, .3)',
     color: 'white',
-    height: 60,
+    height: 40,
     padding: '0 30px',
   },
 }));
@@ -35,19 +35,18 @@ const Headers = ({name, page, setPage}) => {
 
   return (
     <div className={classes.root}>
-      <AppBar position="fixed">
+      <AppBar position="fixed" className={classes.root}>
         <Toolbar className={classes.bar}>
           <Typography variant="h6">
             Kevin Hernandez
           </Typography>
-
-              <Menu
-              id="simple-menu"
-              href={page}
-              keepMounted menu={menu}
-              setPage={setPage}
-              name={name}/>
-
+            <Menu
+            id="simple-menu"
+            href={page}
+            keepMounted menu={menu}
+            setPage={setPage}
+            page={page}
+            name={name}/>
           </Toolbar>
 
       </AppBar>

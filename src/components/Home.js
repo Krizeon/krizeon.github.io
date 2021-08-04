@@ -16,7 +16,6 @@ const useStyles = makeStyles((theme) => ({
     '& > *': {
       margin: theme.spacing(1),
       width: theme.spacing(75),
-      height: theme.spacing(50),
     },
   },
 }));
@@ -24,8 +23,10 @@ const useStyles = makeStyles((theme) => ({
 const Home = ({posts}) => {
   const classes = useStyles();
   return(
-      <Container maxWidth="sm" class="center">
-        <h1>Kevin Hernandez</h1>
+      <Container maxWidth="sm" className={classes.root}>
+        <div>
+          <h1>Kevin Hernandez</h1>
+        </div>
         <HomepageImage/>
         <div maxWidth="50">
           <p align="justify">

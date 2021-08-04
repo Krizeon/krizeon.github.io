@@ -38,7 +38,7 @@ const posts = [
 ];
 
 function App() {
-  const [page, setPage] = useState("home");
+  const [page, setPage] = useState("Home");
   // const [count, setCount] = useState(0); // states demo
 
   const handleSetPage = (pageName) => {
@@ -52,14 +52,12 @@ function App() {
 
       <Headers name="Kevin" page={page} setPage={handleSetPage}/>
       <Toolbar/>
-      <h2>{page}</h2>
-      {page === "home" && (<Home posts={posts}/>)}
-      {page === "about"  && (<About/>)}
-      {page === "contact" && (<Contact/>)}
-      {page === "projects" && (<Projects/>)}
-      <FooterBar/>
+      {page === "Home" && (<Home posts={posts}/>)}
+      {page === "About"  && (<About/>)}
+      {page === "Contact" && (<Contact/>)}
+      {page === "Projects" && (<Projects/>)}
       </Container>
-
+      <FooterBar/>
     </div>
   );
 }
