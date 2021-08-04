@@ -18,6 +18,15 @@ const useStyles = makeStyles((theme) => ({
   title: {
     flexGrow: 1,
   },
+  bar: {
+    background: 'linear-gradient(45deg, #5f9ea0 30%, #317873 90%)',
+    border: 0,
+    borderRadius: 3,
+    boxShadow: '0 3px 5px 2px rgba(49, 120, 115, .3)',
+    color: 'white',
+    height: 60,
+    padding: '0 30px',
+  },
 }));
 
 const Headers = ({name, page, setPage}) => {
@@ -27,29 +36,18 @@ const Headers = ({name, page, setPage}) => {
   return (
     <div className={classes.root}>
       <AppBar position="fixed">
-        <Toolbar>
-            <IconButton
-              className={classes.menuButton}
-              color="inherit"
-              aria-controls="simple-menu"
-              aria-haspopup="true"
-              onClick={()=>{setMenu(!menu)}}
-            >
-            Menu
-              <MenuIcon/>
-            </IconButton>
-            {menu?
+        <Toolbar className={classes.bar}>
+          <Typography variant="h6">
+            Kevin Hernandez
+          </Typography>
+
               <Menu
               id="simple-menu"
               href={page}
               keepMounted menu={menu}
               setPage={setPage}
               name={name}/>
-            : <></>
-            }
-            <Typography variant="h6" className={classes.title}>
-              Kevin Hernandez
-            </Typography>
+
           </Toolbar>
 
       </AppBar>
