@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/krizeon.github.io/static/css/main.70ceca32.chunk.css",
-    "main.js": "/krizeon.github.io/static/js/main.aeab9e0c.chunk.js",
-    "main.js.map": "/krizeon.github.io/static/js/main.aeab9e0c.chunk.js.map",
+    "main.js": "/krizeon.github.io/static/js/main.b85c7adc.chunk.js",
+    "main.js.map": "/krizeon.github.io/static/js/main.b85c7adc.chunk.js.map",
     "runtime-main.js": "/krizeon.github.io/static/js/runtime-main.0e9f398c.js",
     "runtime-main.js.map": "/krizeon.github.io/static/js/runtime-main.0e9f398c.js.map",
     "static/css/2.12e95b59.chunk.css": "/krizeon.github.io/static/css/2.12e95b59.chunk.css",
@@ -25,6 +25,6 @@
     "static/css/2.12e95b59.chunk.css",
     "static/js/2.ecde1eed.chunk.js",
     "static/css/main.70ceca32.chunk.css",
-    "static/js/main.aeab9e0c.chunk.js"
+    "static/js/main.b85c7adc.chunk.js"
   ]
 }
