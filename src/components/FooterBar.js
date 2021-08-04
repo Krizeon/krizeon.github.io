@@ -19,7 +19,7 @@ const FooterBar = () => {
   return (
       <footer className={classes.footer}>
         <Container>
-          <Typography component="div" style={{ backgroundColor: '#efefef'}} >
+          <Typography component="div" style={{ backgroundColor: '#fffffff'}} >
           <Link
             color="inherit"
             href="https://github.com/Krizeon"
