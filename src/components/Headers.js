@@ -35,7 +35,7 @@ const Headers = ({name, setPage}) => {
               aria-haspopup="true"
               onClick={()=>{setMenu(!menu)}}
             >
-            Menu 
+            Menu
               <MenuIcon/>
             </IconButton>
             {menu? <Menu id="simple-menu" keepMounted menu={menu} setPage={setPage} name={name}/> : <></>}
