@@ -25,7 +25,7 @@ const Home = ({posts}) => {
   return(
       <Container maxWidth="sm" className={classes.root}>
         <div>
-          <h1>Kevin Hernandez</h1>
+          <h1 class='h1'>Kevin Hernandez</h1>
         </div>
         <HomepageImage/>
         <div maxWidth="50">

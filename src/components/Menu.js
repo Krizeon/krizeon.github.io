@@ -48,6 +48,14 @@ const Menu = ({name, page, setPage}) => {
           <MenuItem className={classes.paper} onClick={()=> {setPage("Projects")}}>Projects</MenuItem>
           }
 
+        {page==="Art" ?
+          <u>
+            <MenuItem className={classes.paper} onClick={()=> {setPage("Art")}}>Art</MenuItem>
+          </u>
+          :
+          <MenuItem className={classes.paper} onClick={()=> {setPage("Art")}}>Art</MenuItem>
+          }
+
         {page==="Contact" ?
           <u>
             <MenuItem className={classes.paper} onClick={()=> {setPage("Contact")}}>Contact</MenuItem>

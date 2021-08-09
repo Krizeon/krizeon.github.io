@@ -6,6 +6,7 @@ import About from './components/About';
 import Home from './components/Home';
 import Contact from './components/Contact';
 import Projects from './components/Projects';
+import Art from './components/Art';
 import FooterBar from './components/FooterBar';
 import gameScreenshot from './assets/images/color-seeker-screenshot1.jpg'
 import robotPic from './assets/images/robot-front.jpeg'
@@ -20,12 +21,12 @@ import Toolbar from '@material-ui/core/Toolbar';
 
 const posts = [
   {
-    title: 'Color Seeker',
+    title: 'Color Seeker game',
     date: '2021',
     description:
       'Tile-based platformer coded using Pythons Arcade library!',
     image: gameScreenshot,
-    imageText: 'Cool Text',
+    imageText: 'Color Seeker',
   },
   {
     title: 'WiFi Controlled Robot',
@@ -56,6 +57,8 @@ function App() {
       {page === "About"  && (<About/>)}
       {page === "Contact" && (<Contact/>)}
       {page === "Projects" && (<Projects/>)}
+      {page === "Art" && (<Art/>)}
+
       </Container>
       <FooterBar/>
     </div>

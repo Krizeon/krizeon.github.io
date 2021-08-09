@@ -12,6 +12,11 @@ const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
   },
+  cornerHeader: {
+    fontFamily: 'georgia',
+    fontSize: 24,
+    fontWeight: 'lighter',
+  },
   menuButton: {
     marginRight: theme.spacing(2),
   },
@@ -37,7 +42,7 @@ const Headers = ({name, page, setPage}) => {
     <div className={classes.root}>
       <AppBar position="fixed" className={classes.root}>
         <Toolbar className={classes.bar}>
-          <Typography variant="h6">
+          <Typography variant="h6" className={classes.cornerHeader}>
             Kevin Hernandez
           </Typography>
             <Menu
