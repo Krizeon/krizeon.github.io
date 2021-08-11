@@ -11,6 +11,7 @@ import Menu from './Menu';
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
+    overflow: 'auto',
   },
   cornerHeader: {
     fontFamily: 'georgia',
@@ -25,9 +26,8 @@ const useStyles = makeStyles((theme) => ({
   },
   bar: {
     background: 'linear-gradient(45deg, #cdcdcd 30%, #efefef 90%)',
-    border: 0,
-    borderRadius: 0,
     boxShadow: '0 3px 5px 2px rgba(163, 193, 173, .3)',
+    overflow: 'auto',
     color: 'white',
     height: 40,
     padding: '0 30px',

@@ -2,6 +2,12 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import ImageList from '@material-ui/core/ImageList';
 import ImageListItem from '@material-ui/core/ImageListItem';
+import ImageListItemBar from '@material-ui/core/ImageListItemBar';
+import ListSubheader from '@material-ui/core/ListSubheader';
+import IconButton from '@material-ui/core/IconButton';
+import InfoIcon from '@material-ui/icons/Info';
+import Backdrop from '@material-ui/core/Backdrop';
+
 
 import green_painting from '../assets/images/green-abstract.jpg'
 import splatter_painting from '../assets/images/Hernandez-Kevin-acrylic.jpg'
@@ -19,9 +25,26 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: theme.palette.background.paper,
   },
   imageList: {
-    width: 750,
-    height: 1500,
+    width: '95vw',
+    height: 'auto',
   },
+  image:{
+    maxHeight: '80vh',
+    width: 'auto'
+  },
+  icon: {
+   color: 'rgba(255, 255, 255, 0.54)',
+  },
+  backdrop: {
+    zIndex: theme.zIndex.drawer + 1,
+    color: '#fff',
+  },
+  popoverImg: {
+    width: 'auto',
+    maxWidth: '80vw',
+    height: 'auto',
+    maxHeight: '90vh'
+  }
 }));
 
 const itemData = [
@@ -89,16 +112,55 @@ const itemData = [
  */
 const ImageCollection = () => {
   const classes = useStyles();
+  const [open, setOpen] = React.useState(false);
+  const [width, setWidth] = React.useState(500);
+  const [image, setImage] = React.useState(0);
+
+  const handleClose = () => {
+      setOpen(false);
+      setWidth(500);
+    };
+    const handleToggle = (image) => {
+      setOpen(!open);
+      setWidth(500);
+      setImage(image);
+      console.log(image);
+    };
 
   return (
     <div className={classes.root}>
-      <ImageList rowHeight={300} cols={4}>
-        {itemData.map((item) => (
-          <ImageListItem key={item.img} cols={item.cols || 1}  rows={item.rows || 1}>
-            <img src={item.img} alt={item.title} />
-          </ImageListItem>
-        ))}
+      <ImageList className={classes.imageList} rowHeight={300} cols={4}>
+        <ImageListItem key="Subheader" cols={2} style={{ height: 'auto' }}>
+          <ListSubheader component="div">Paintings</ListSubheader>
+        </ImageListItem>
+          {itemData.map((item, index) => (
+            item.key = index,
+            <ImageListItem className={classes.image} key={item.img} cols={item.cols || 1}  rows={item.rows || 1}>
+              <img src={item.img} alt={item.title} onClick={() => handleToggle(index)}/>
+              <ImageListItemBar
+              title={item.title}
+              subtitle={<span>{item.author}</span>}
+              actionIcon={
+                <IconButton onClick={() => handleToggle(index)} aria-label={`info about ${item.title}`} className={classes.icon}>
+                  <InfoIcon />
+                </IconButton>
+              }
+              />
+            </ImageListItem>
+
+          ))}
       </ImageList>
+      {open ?
+        <Backdrop className={classes.backdrop} open={open} onClick={handleClose}>
+          {itemData.map((item) => (
+            item.key === image ?
+            <img src={item.img} className={classes.popoverImg}></img>
+              : <div/>
+          ))}
+        </Backdrop> :
+        <div/>
+      }
+
     </div>
   );
 }
