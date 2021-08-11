@@ -20,7 +20,7 @@ const About = () => {
         </p>
         <p align="justify">
           I am also currently developing this website as of early August 2021.
-          It is my practical foray into React, after I learned a little bit of it
+          It is my practical dive into React, after I learned a little bit of it
           in my Spring 2020 Software Development class... But we all know what
           happened during that time of the year! Thus, I am applying my best
           React skills here. Please watch this site grow over time!

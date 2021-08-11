@@ -48,7 +48,8 @@ const Headers = ({name, page, setPage}) => {
             <Menu
             id="simple-menu"
             href={page}
-            keepMounted menu={menu}
+            keepMounted
+            menu={menu}
             setPage={setPage}
             page={page}
             name={name}/>
