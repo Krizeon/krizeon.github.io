@@ -51,42 +51,42 @@ const itemData = [
   {
     img: portrait_albert,
     title: 'Portrait of Alberto',
-    author: 'Kevin Hernandez',
+    author: '2019',
     cols: 3,
     rows: 4
   },
   {
     img: portrait_angel,
     title: 'Portrait of Angel',
-    author: 'Kevin Hernandez',
+    author: '2019',
     cols: 3,
     rows: 4
   },
   {
     img: green_painting,
     title: 'Green Abstract',
-    author: 'Kevin Hernandez',
+    author: '2018',
     cols: 2,
     rows: 4,
   },
   {
     img: oil_window,
     title: 'Sky Above The Horizon',
-    author: 'Kevin Hernandez',
+    author: '2018',
     cols: 2,
     rows: 4
   },
   {
     img: splatter_painting,
     title: 'Landscape Splatter',
-    author: 'Kevin Hernandez',
+    author: '2018',
     cols: 4,
     rows: 3
   },
   {
     img: oil_landscape,
     title: 'Lost',
-    author: 'Kevin Hernandez',
+    author: '2018',
     cols: 4,
     rows: 3
   }
