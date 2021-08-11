@@ -51,42 +51,42 @@ const itemData = [
   {
     img: portrait_albert,
     title: 'Portrait of Alberto',
-    author: '2019',
+    year: '2019',
     cols: 3,
     rows: 4
   },
   {
     img: portrait_angel,
     title: 'Portrait of Angel',
-    author: '2019',
+    year: '2019',
     cols: 3,
     rows: 4
   },
   {
     img: green_painting,
     title: 'Green Abstract',
-    author: '2018',
+    year: '2018',
     cols: 2,
     rows: 4,
   },
   {
     img: oil_window,
     title: 'Sky Above The Horizon',
-    author: '2018',
+    year: '2018',
     cols: 2,
     rows: 4
   },
   {
     img: splatter_painting,
     title: 'Landscape Splatter',
-    author: '2018',
+    year: '2018',
     cols: 4,
     rows: 3
   },
   {
     img: oil_landscape,
     title: 'Lost',
-    author: '2018',
+    year: '2018',
     cols: 4,
     rows: 3
   }
@@ -102,7 +102,7 @@ const itemData = [
  *   {
  *     img: image,
  *     title: 'Image',
- *     author: 'author',
+ *     year: 'year',
  *     cols: 2,
  *   },
  *   {
@@ -139,7 +139,7 @@ const ImageCollection = () => {
               <img src={item.img} alt={item.title} onClick={() => handleToggle(index)}/>
               <ImageListItemBar
               title={item.title}
-              subtitle={<span>{item.author}</span>}
+              subtitle={<span>{item.year}</span>}
               actionIcon={
                 <IconButton onClick={() => handleToggle(index)} aria-label={`info about ${item.title}`} className={classes.icon}>
                   <InfoIcon />
