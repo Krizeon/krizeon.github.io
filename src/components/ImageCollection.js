@@ -131,7 +131,6 @@ const ImageCollection = () => {
     <div className={classes.root}>
       <ImageList className={classes.imageList} rowHeight={300} cols={4}>
         <ImageListItem key="Subheader" cols={2} style={{ height: 'auto' }}>
-          <ListSubheader component="div">Paintings</ListSubheader>
         </ImageListItem>
           {itemData.map((item, index) => (
             item.key = index,

@@ -41,7 +41,6 @@ const Home = ({posts}) => {
           {posts.map((post) => (
                 <BlogPost key={post.title} post={post} />
               ))}
-          <Content></Content>
         </div>
       </Container>
   );

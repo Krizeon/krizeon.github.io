@@ -51,9 +51,8 @@ function App() {
 
   return (
     <div className="App">
-      <Container maxWidth="lg">
-
       <Headers name="Kevin" page={page} setPage={handleSetPage}/>
+      <Container maxWidth="lg">
       <Toolbar/>
       {page === "Home" && (<Home posts={posts}/>)}
       {page === "About"  && (<About/>)}

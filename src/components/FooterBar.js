@@ -8,15 +8,19 @@ import Container from '@material-ui/core/Container';
 
 const useStyles = makeStyles((theme) => ({
   footer: {
-    background: 'linear-gradient(45deg, #cdcdcd 30%, #efefef 90%)',
+    background: 'linear-gradient(45deg, #cdcdcd 30%, #efefefef 90%)',
     // marginTop: theme.spacing(8),
     padding: theme.spacing(6, 0),
   },
+  spacing: {
+      padding: '150px 0 0 0'
+  }
 }));
 
 const FooterBar = () => {
   const classes = useStyles();
   return (
+    <div className={classes.spacing}>
       <footer className={classes.footer}>
         <Container>
           <Typography component="div" style={{ backgroundColor: '#fffffff'}} >
@@ -41,6 +45,7 @@ const FooterBar = () => {
         </Typography>
       </Container>
     </footer>
+  </div>
   );
 }
 

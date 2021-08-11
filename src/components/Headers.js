@@ -10,7 +10,7 @@ import Menu from './Menu';
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    flexGrow: 1,
+    flexGrow: 5,
     overflow: 'auto',
   },
   cornerHeader: {
@@ -25,12 +25,12 @@ const useStyles = makeStyles((theme) => ({
     flexGrow: 1,
   },
   bar: {
-    background: 'linear-gradient(45deg, #cdcdcd 30%, #efefef 90%)',
+    background: 'linear-gradient(45deg, #cdcdcd 30%, #efefef 80%)',
     boxShadow: '0 3px 5px 2px rgba(163, 193, 173, .3)',
     overflow: 'auto',
     color: 'white',
-    height: 40,
-    padding: '0 30px',
+    height: 60,
+    padding: '0 20px',
   },
 }));
 
@@ -39,8 +39,7 @@ const Headers = ({name, page, setPage}) => {
   const [menu, setMenu] = useState(false);
 
   return (
-    <div className={classes.root}>
-      <AppBar position="fixed" className={classes.root}>
+      <AppBar position="static" className={classes.root}>
         <Toolbar className={classes.bar}>
           <Typography variant="h6" className={classes.cornerHeader}>
             Kevin Hernandez
@@ -56,7 +55,6 @@ const Headers = ({name, page, setPage}) => {
           </Toolbar>
 
       </AppBar>
-    </div>
   );
 }
 
