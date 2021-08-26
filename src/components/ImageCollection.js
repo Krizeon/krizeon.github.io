@@ -15,6 +15,8 @@ import oil_landscape from '../assets/images/Hernandez-Kevin-oil.jpg'
 import oil_window from '../assets/images/sky-above-the-horizon.jpg'
 import portrait_angel from '../assets/images/portrait_angel.jpg'
 import portrait_albert from '../assets/images/portrait_albert.jpeg'
+import portrait_alice from '../assets/images/portrait-alice.jpg'
+
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -48,6 +50,13 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 const itemData = [
+  {
+    img: portrait_alice,
+    title: 'Portrait of Alice',
+    year: '2021',
+    cols: 3,
+    rows: 4
+  },
   {
     img: portrait_albert,
     title: 'Portrait of Alberto',

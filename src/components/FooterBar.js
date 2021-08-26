@@ -8,9 +8,8 @@ import Container from '@material-ui/core/Container';
 
 const useStyles = makeStyles((theme) => ({
   footer: {
-    background: 'linear-gradient(45deg, #cdcdcd 30%, #efefefef 90%)',
-    // marginTop: theme.spacing(8),
-    padding: theme.spacing(6, 0),
+    backgroundColor: '#efefef',
+    padding: theme.spacing(10, 0),
   },
   spacing: {
       padding: '150px 0 0 0'
@@ -23,7 +22,7 @@ const FooterBar = () => {
     <div className={classes.spacing}>
       <footer className={classes.footer}>
         <Container>
-          <Typography component="div" style={{ backgroundColor: '#fffffff'}} >
+          <Typography component="div">
           <Link
             color="inherit"
             href="https://github.com/Krizeon"
@@ -34,13 +33,7 @@ const FooterBar = () => {
             color="inherit"
             href="https://www.linkedin.com/in/kevin-hernandez-3816331a7/"
           >
-            - LinkedIn -
-          </Link>
-          <Link
-            color="inherit"
-            href="/add-link-here/"
-          >
-          - Instagram
+            - LinkedIn
           </Link>
         </Typography>
       </Container>
