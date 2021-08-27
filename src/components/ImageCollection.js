@@ -7,6 +7,8 @@ import ListSubheader from '@material-ui/core/ListSubheader';
 import IconButton from '@material-ui/core/IconButton';
 import InfoIcon from '@material-ui/icons/Info';
 import Backdrop from '@material-ui/core/Backdrop';
+import '../assets/css/ImageCollection.css';
+
 
 
 import green_painting from '../assets/images/green-abstract.jpg'
@@ -137,8 +139,7 @@ const ImageCollection = () => {
     };
 
   return (
-    <div className={classes.root}>
-      <ImageList className={classes.imageList} rowHeight={300} cols={4}>
+    <div class="grid-container" className="grid-container">
         <ImageListItem key="Subheader" cols={2} style={{ height: 'auto' }}>
         </ImageListItem>
           {itemData.map((item, index) => (
@@ -157,7 +158,6 @@ const ImageCollection = () => {
             </ImageListItem>
 
           ))}
-      </ImageList>
       {open ?
         <Backdrop className={classes.backdrop} open={open} onClick={handleClose}>
           {itemData.map((item) => (
