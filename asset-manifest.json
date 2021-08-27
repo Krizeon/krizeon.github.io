@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.4da43a41.chunk.css",
-    "main.js": "/static/js/main.a3cdcda2.chunk.js",
-    "main.js.map": "/static/js/main.a3cdcda2.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.0b90d49a.js",
-    "runtime-main.js.map": "/static/js/runtime-main.0b90d49a.js.map",
+    "main.css": "/static/css/main.3f3e5cf1.chunk.css",
+    "main.js": "/static/js/main.e88af567.chunk.js",
+    "main.js.map": "/static/js/main.e88af567.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.1c25726c.js",
+    "runtime-main.js.map": "/static/js/runtime-main.1c25726c.js.map",
     "static/css/2.8c49bb0a.chunk.css": "/static/css/2.8c49bb0a.chunk.css",
-    "static/js/2.1ba1d6cc.chunk.js": "/static/js/2.1ba1d6cc.chunk.js",
-    "static/js/2.1ba1d6cc.chunk.js.map": "/static/js/2.1ba1d6cc.chunk.js.map",
-    "static/js/3.3b906ff5.chunk.js": "/static/js/3.3b906ff5.chunk.js",
-    "static/js/3.3b906ff5.chunk.js.map": "/static/js/3.3b906ff5.chunk.js.map",
+    "static/js/2.a4080d63.chunk.js": "/static/js/2.a4080d63.chunk.js",
+    "static/js/2.a4080d63.chunk.js.map": "/static/js/2.a4080d63.chunk.js.map",
+    "static/js/3.9213ccea.chunk.js": "/static/js/3.9213ccea.chunk.js",
+    "static/js/3.9213ccea.chunk.js.map": "/static/js/3.9213ccea.chunk.js.map",
     "index.html": "/index.html",
     "static/css/2.8c49bb0a.chunk.css.map": "/static/css/2.8c49bb0a.chunk.css.map",
-    "static/css/main.4da43a41.chunk.css.map": "/static/css/main.4da43a41.chunk.css.map",
-    "static/js/2.1ba1d6cc.chunk.js.LICENSE.txt": "/static/js/2.1ba1d6cc.chunk.js.LICENSE.txt",
+    "static/css/main.3f3e5cf1.chunk.css.map": "/static/css/main.3f3e5cf1.chunk.css.map",
+    "static/js/2.a4080d63.chunk.js.LICENSE.txt": "/static/js/2.a4080d63.chunk.js.LICENSE.txt",
     "static/media/Hernandez-Kevin-acrylic.047117f6.jpg": "/static/media/Hernandez-Kevin-acrylic.047117f6.jpg",
     "static/media/Hernandez-Kevin-oil.340fbedc.jpg": "/static/media/Hernandez-Kevin-oil.340fbedc.jpg",
     "static/media/brush-strokes.7134d790.png": "/static/media/brush-strokes.7134d790.png",
@@ -28,10 +28,10 @@
     "static/media/sky-above-the-horizon.74fddf7e.jpg": "/static/media/sky-above-the-horizon.74fddf7e.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.0b90d49a.js",
+    "static/js/runtime-main.1c25726c.js",
     "static/css/2.8c49bb0a.chunk.css",
-    "static/js/2.1ba1d6cc.chunk.js",
-    "static/css/main.4da43a41.chunk.css",
-    "static/js/main.a3cdcda2.chunk.js"
+    "static/js/2.a4080d63.chunk.js",
+    "static/css/main.3f3e5cf1.chunk.css",
+    "static/js/main.e88af567.chunk.js"
   ]
 }
