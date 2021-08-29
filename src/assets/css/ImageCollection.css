@@ -7,13 +7,12 @@
 }
 
 
-@media only screen and (min-width: 400px) {
+@media only screen and (min-width: 600px) {
   .grid-container {
-    padding-top: 56px;
-    padding-bottom: 56px;
+    padding-top: 75px;
+    padding-bottom: 75px;
     display: grid;
     grid-template-columns: 300px;
-    grid-row-gap: 16px;
     grid-column-gap: 16px;
   }
   .grid_container > div {
@@ -22,11 +21,11 @@
 }
 
 
-@media only screen and (min-width: 640px) {
+@media only screen and (min-width: 768px) {
   .grid-container {
-    padding-top: 56px;
-    padding-bottom: 56px;
     display: grid;
+    padding-top: 75px;
+    padding-bottom: 75px;
     grid-template-columns: 300px 300px;
     grid-row-gap: 16px;
     grid-column-gap: 16px;
@@ -39,10 +38,13 @@
 @media only screen and (min-width: 981px) {
   .grid-container {
     display: grid;
-    padding-top: 56px;
-    padding-bottom: 56px;
+    padding-top: 75px;
+    padding-bottom: 75px;
     grid-template-columns: 300px 300px 300px 300px;
     grid-row-gap: 16px;
     grid-column-gap: 16px;
+  }
+  .grid_container > div {
+    padding: 16px;
   }
 }

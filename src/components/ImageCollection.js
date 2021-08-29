@@ -9,8 +9,6 @@ import InfoIcon from '@material-ui/icons/Info';
 import Backdrop from '@material-ui/core/Backdrop';
 import '../assets/css/ImageCollection.css';
 
-
-
 import green_painting from '../assets/images/green-abstract.jpg'
 import splatter_painting from '../assets/images/Hernandez-Kevin-acrylic.jpg'
 import oil_landscape from '../assets/images/Hernandez-Kevin-oil.jpg'
@@ -33,7 +31,8 @@ const useStyles = makeStyles((theme) => ({
     height: 'auto',
   },
   image:{
-    maxHeight: '80vh',
+    height: '400px',
+    maxHeight: '450px',
     width: 'auto'
   },
   icon: {
@@ -140,7 +139,7 @@ const ImageCollection = () => {
 
   return (
     <div class="grid-container" className="grid-container">
-        <ImageListItem key="Subheader" cols={2} style={{ height: 'auto' }}>
+        <ImageListItem key="Subheader" cols={2} style={{ height: '300px' }}>
         </ImageListItem>
           {itemData.map((item, index) => (
             item.key = index,
