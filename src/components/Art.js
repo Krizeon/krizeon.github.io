@@ -4,7 +4,7 @@ import ImageCollection from './ImageCollection';
 
 const Art = () => {
   return(
-    <div class='center'>
+    <div>
       <ImageCollection/>
     </div>
   );

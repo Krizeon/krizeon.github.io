@@ -27,6 +27,7 @@ const posts = [
       'Tile-based platformer coded using Pythons Arcade library!',
     image: gameScreenshot,
     imageText: 'Color Seeker',
+    link: 'https://github.com/Krizeon/Color-seeker-game'
   },
   {
     title: 'WiFi Controlled Robot',
@@ -35,6 +36,7 @@ const posts = [
       'For our final project in our Embedded Systems course, we were given the task of building a hands-on, creative learning experience',
     image: robotPic,
     imageText: 'Image Text',
+    link: 'https://github.com/Krizeon/CS435-Robot'
   },
 ];
 
@@ -49,9 +51,8 @@ function App() {
 
   return (
     <div className="App">
-      <Container maxWidth="lg">
-
       <Headers name="Kevin" page={page} setPage={handleSetPage}/>
+      <Container maxWidth="lg">
       <Toolbar/>
       {page === "Home" && (<Home posts={posts}/>)}
       {page === "About"  && (<About/>)}

@@ -10,27 +10,30 @@ import Menu from './Menu';
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    flexGrow: 1,
+    flexGrow: 5,
   },
   cornerHeader: {
     fontFamily: 'georgia',
     fontSize: 24,
     fontWeight: 'lighter',
+    color: '#4d4d4d'
   },
   menuButton: {
     marginRight: theme.spacing(2),
+    color: '#4d4d4d'
   },
   title: {
     flexGrow: 1,
   },
   bar: {
-    background: 'linear-gradient(45deg, #cdcdcd 30%, #efefef 90%)',
-    border: 0,
-    borderRadius: 0,
-    boxShadow: '0 3px 5px 2px rgba(163, 193, 173, .3)',
+    margin: '0 10vw',
+    paddingTop: '40px',
+    background: '#ffffff',
+    borderBottom: 'solid 1px #363f45',
+    overflow: 'auto',
     color: 'white',
-    height: 40,
-    padding: '0 30px',
+    height: 60,
+    padding: '0 20px',
   },
 }));
 
@@ -38,24 +41,28 @@ const Headers = ({name, page, setPage}) => {
   const classes = useStyles();
   const [menu, setMenu] = useState(false);
 
-  return (
-    <div className={classes.root}>
-      <AppBar position="fixed" className={classes.root}>
-        <Toolbar className={classes.bar}>
-          <Typography variant="h6" className={classes.cornerHeader}>
-            Kevin Hernandez
-          </Typography>
-            <Menu
-            id="simple-menu"
-            href={page}
-            keepMounted menu={menu}
-            setPage={setPage}
-            page={page}
-            name={name}/>
-          </Toolbar>
+  const clickNameGoHome = () => {
+    setPage('Home');
+  }
 
-      </AppBar>
-    </div>
+  return (
+    <Toolbar className={classes.bar}>
+      <Typography
+        variant="h6"
+        className={classes.cornerHeader}
+        onClick={clickNameGoHome}
+      >
+        Kevin Hernandez
+      </Typography>
+        <Menu
+        id="simple-menu"
+        href={page}
+        keepMounted
+        menu={menu}
+        setPage={setPage}
+        page={page}
+        name={name}/>
+      </Toolbar>
   );
 }
 

@@ -22,42 +22,43 @@ cardMedia: {
 });
 
 const BlogPost = (props) => {
-const classes = useStyles();
-const { post } = props;
+  const classes = useStyles();
+  const { post } = props;
 
-return (
-  <Grid container spacing={4}>
-  <Grid item xs={12} md={24}>
-    <CardActionArea component="a" href="projects">
-      <Card className={classes.card}>
-        <div className={classes.cardDetails}>
-          <CardContent>
-            <Typography component="h2" variant="h5">
-              {post.title}
-            </Typography>
-            <Typography variant="subtitle1" color="textSecondary">
-              {post.date}
-            </Typography>
-            <Typography variant="subtitle1" paragraph>
-              {post.description}
-            </Typography>
-            <Typography variant="subtitle1" color="primary">
-              Continue reading...
-            </Typography>
-          </CardContent>
-        </div>
-        <Hidden xsDown>
-          <CardMedia className={classes.cardMedia} image={post.image} title={post.imageTitle} />
-        </Hidden>
-      </Card>
-    </CardActionArea>
-  </Grid>
-  </Grid>
-);
+  const handleClick = () => {
+    window.open(post.link);
+  };
+
+  return (
+    <Grid container spacing={4}>
+    <Grid item xs={12} md={24}>
+      <CardActionArea component="a" href="projects" onClick={handleClick}>
+        <Card className={classes.card}>
+          <div className={classes.cardDetails}>
+            <CardContent>
+              <Typography component="h2" variant="h5">
+                {post.title}
+              </Typography>
+              <Typography variant="subtitle1" paragraph>
+                {post.description}
+              </Typography>
+              <Typography variant="subtitle1" color="primary">
+                Continue reading...
+              </Typography>
+            </CardContent>
+          </div>
+          <Hidden xsDown>
+            <CardMedia className={classes.cardMedia} image={post.image} title={post.imageTitle} />
+          </Hidden>
+        </Card>
+      </CardActionArea>
+    </Grid>
+    </Grid>
+  );
 }
 
 BlogPost.propTypes = {
-post: PropTypes.object,
+  post: PropTypes.object,
 };
 
 export default BlogPost;

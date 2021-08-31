@@ -24,9 +24,7 @@ const Home = ({posts}) => {
   const classes = useStyles();
   return(
       <Container maxWidth="sm" className={classes.root}>
-        <div>
           <h1 class='h1'>Kevin Hernandez</h1>
-        </div>
         <HomepageImage/>
         <div maxWidth="50">
           <p align="justify">
@@ -36,14 +34,9 @@ const Home = ({posts}) => {
              for guiding me through the process of building a React website!
           </p>
           <ContentSeparator/>
-          <p>
-            This is a placeholder. Just to test!
-          </p>
-          <ContentSeparator/>
           {posts.map((post) => (
                 <BlogPost key={post.title} post={post} />
               ))}
-          <Content></Content>
         </div>
       </Container>
   );

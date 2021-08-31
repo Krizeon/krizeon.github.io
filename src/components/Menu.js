@@ -14,7 +14,8 @@ const useStyles = makeStyles((theme) => ({
   },
   paper: {
     flexGrow: 1,
-    disableGutters: 'true'
+    disableGutters: 'true',
+    color: '#4d4d4d',
   },
 }));
 
