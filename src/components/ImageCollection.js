@@ -13,6 +13,7 @@ import green_painting from '../assets/images/green-abstract.jpg'
 import splatter_painting from '../assets/images/Hernandez-Kevin-acrylic.jpg'
 import oil_landscape from '../assets/images/Hernandez-Kevin-oil.jpg'
 import oil_window from '../assets/images/sky-above-the-horizon.jpg'
+import self_portrait_watercolor from '../assets/images/self-portrait-watercolor.jpg'
 import portrait_angel from '../assets/images/portrait_angel.jpg'
 import portrait_albert from '../assets/images/portrait_albert.jpeg'
 import portrait_alice from '../assets/images/portrait-alice.jpg'
@@ -68,6 +69,13 @@ const itemData = [
   {
     img: portrait_angel,
     title: 'Portrait of Angel',
+    year: '2019',
+    cols: 3,
+    rows: 4
+  },
+  {
+    img: self_portrait_watercolor,
+    title: 'Self Portrait, watercolor',
     year: '2019',
     cols: 3,
     rows: 4
@@ -139,8 +147,7 @@ const ImageCollection = () => {
 
   return (
     <div class="grid-container" className="grid-container">
-        <ImageListItem key="Subheader" cols={2} style={{ height: '300px' }}>
-        </ImageListItem>
+
           {itemData.map((item, index) => (
             item.key = index,
             <ImageListItem className={classes.image} key={item.img} cols={item.cols || 1}  rows={item.rows || 1}>
