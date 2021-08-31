@@ -155,7 +155,6 @@ const ImageCollection = () => {
               }
               />
             </ImageListItem>
-
           ))}
       {open ?
         <Backdrop className={classes.backdrop} open={open} onClick={handleClose}>

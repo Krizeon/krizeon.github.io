@@ -34,10 +34,6 @@ const Home = ({posts}) => {
              for guiding me through the process of building a React website!
           </p>
           <ContentSeparator/>
-          <p>
-            This is a placeholder. Just to test!
-          </p>
-          <ContentSeparator/>
           {posts.map((post) => (
                 <BlogPost key={post.title} post={post} />
               ))}
