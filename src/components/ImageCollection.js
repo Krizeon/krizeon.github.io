@@ -147,22 +147,21 @@ const ImageCollection = () => {
 
   return (
     <div class="grid-container" className="grid-container">
-
-          {itemData.map((item, index) => (
-            item.key = index,
-            <ImageListItem className={classes.image} key={item.img} cols={item.cols || 1}  rows={item.rows || 1}>
-              <img src={item.img} alt={item.title} onClick={() => handleToggle(index)}/>
-              <ImageListItemBar
-              title={item.title}
-              subtitle={<span>{item.year}</span>}
-              actionIcon={
-                <IconButton onClick={() => handleToggle(index)} aria-label={`info about ${item.title}`} className={classes.icon}>
-                  <InfoIcon />
-                </IconButton>
-              }
-              />
-            </ImageListItem>
-          ))}
+        {itemData.map((item, index) => (
+          item.key = index,
+          <ImageListItem className={classes.image} key={item.img} cols={item.cols || 1}  rows={item.rows || 1}>
+            <img src={item.img} alt={item.title} onClick={() => handleToggle(index)}/>
+            <ImageListItemBar
+            title={item.title}
+            subtitle={<span>{item.year}</span>}
+            actionIcon={
+              <IconButton onClick={() => handleToggle(index)} aria-label={`info about ${item.title}`} className={classes.icon}>
+                <InfoIcon />
+              </IconButton>
+            }
+            />
+          </ImageListItem>
+        ))}
       {open ?
         <Backdrop className={classes.backdrop} open={open} onClick={handleClose}>
           {itemData.map((item) => (
