@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.52cd0b31.chunk.css",
-    "main.js": "/static/js/main.ebda4a1c.chunk.js",
-    "main.js.map": "/static/js/main.ebda4a1c.chunk.js.map",
+    "main.js": "/static/js/main.06718cff.chunk.js",
+    "main.js.map": "/static/js/main.06718cff.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.fdabb249.js",
     "runtime-main.js.map": "/static/js/runtime-main.fdabb249.js.map",
     "static/css/2.8c49bb0a.chunk.css": "/static/css/2.8c49bb0a.chunk.css",
@@ -25,6 +25,7 @@
     "static/media/portrait_angel.083f51e1.jpg": "/static/media/portrait_angel.083f51e1.jpg",
     "static/media/robot-front.cb5affe6.jpeg": "/static/media/robot-front.cb5affe6.jpeg",
     "static/media/index.css": "/static/media/roboto-vietnamese-400-normal.c0bec65d.woff2",
+    "static/media/self-portrait-watercolor.b9c513e3.jpg": "/static/media/self-portrait-watercolor.b9c513e3.jpg",
     "static/media/sky-above-the-horizon.74fddf7e.jpg": "/static/media/sky-above-the-horizon.74fddf7e.jpg"
   },
   "entrypoints": [
@@ -32,6 +33,6 @@
     "static/css/2.8c49bb0a.chunk.css",
     "static/js/2.31dfb629.chunk.js",
     "static/css/main.52cd0b31.chunk.css",
-    "static/js/main.ebda4a1c.chunk.js"
+    "static/js/main.06718cff.chunk.js"
   ]
 }
